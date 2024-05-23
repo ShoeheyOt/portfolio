@@ -1,7 +1,9 @@
+import { TypewriterHeader } from "./TypewriterHeader";
+
 export const Header = () => {
   return (
     <div className="h-screen border border-white">
-      <div>this is header</div>
+      <TypewriterHeader />
     </div>
   );
 };
