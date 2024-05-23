@@ -7,23 +7,23 @@ import {
 export function TypewriterHeader() {
   const words = [
     {
-      text: "Hi  ",
+      text: "Hi",
     },
     {
-      text: " All. ",
+      text: " All.",
     },
     {
-      text: "I'm ",
+      text: "I'm",
     },
     {
       text: "Shu ",
       className: "dark:text-secondary underline decoration-secondary",
     },
     {
-      text: "full ",
+      text: "full",
     },
     {
-      text: "stack ",
+      text: "stack",
     },
     {
       text: "developer.",
@@ -33,7 +33,7 @@ export function TypewriterHeader() {
     <div className="flex flex-col items-center justify-center h-[40rem] ">
       <TypewriterEffect words={words} />
       <p className="text-neutral-600 dark:text-neutral-200 text-4xl  mt-10">
-        Enthusiast who love coding
+        Enthusiast who love and enjoy coding
       </p>
     </div>
   );
