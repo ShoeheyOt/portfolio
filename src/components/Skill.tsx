@@ -1,7 +1,13 @@
+import { Backend } from "./ui/Skills/Backend";
+import { Frontend } from "./ui/Skills/Frontend";
+import { Infrastructure } from "./ui/Skills/Infrastructure";
+
 export const Skill = () => {
   return (
     <div className="border border-white w-1/2">
-      <div>this is skill icon part</div>
+      <Frontend />
+      <Backend />
+      <Infrastructure />
     </div>
   );
 };
