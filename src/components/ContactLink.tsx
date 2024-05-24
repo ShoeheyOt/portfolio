@@ -6,15 +6,17 @@ export const ContactLink = () => {
     <div className="flex gap-20">
       <a
         title="github"
-        className="cursor-pointer hover:opacity-70"
         href={`${githubLink}`}
+        target="_blank"
+        className="cursor-pointer hover:opacity-70"
       >
         <img src="/external/github.svg" className="w-12 h-12" />
       </a>
       <a
         title="LinkedIn"
-        className="cursor-pointer hover:opacity-70"
         href={`${linkedInLink}`}
+        target="_blank"
+        className="cursor-pointer hover:opacity-70"
       >
         <img src="/external/linkedin.svg" />
       </a>
