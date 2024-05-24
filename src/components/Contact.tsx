@@ -1,11 +1,23 @@
 import { useForm } from "react-hook-form";
 
 export const Contact = () => {
+  interface UseFormInputs {
+    name: string;
+    email: string;
+    content: string;
+  }
+
   const {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm();
+    reset,
+  } = useForm<UseFormInputs>();
+
+  const onSubmit = (data: UseFormInputs) => {
+    console.log(data);
+    reset();
+  };
 
   return (
     <div
@@ -17,10 +29,7 @@ export const Contact = () => {
         Want to contact me? Send me via below form :)
       </p>
       <div className="w-2/4 h-2/5">
-        <form
-          onSubmit={handleSubmit((data) => console.log(data))}
-          className="flex flex-col gap-4"
-        >
+        <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-4">
           <input
             {...register("name", { required: true })}
             type="text"
