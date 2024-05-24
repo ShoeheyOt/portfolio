@@ -1,11 +1,7 @@
 import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
-
-interface UseFormInputs {
-  sender: string;
-  email: string;
-  message: string;
-}
+import { Schema, schema } from "./validation";
+import { zodResolver } from "@hookform/resolvers/zod";
 
 export const ContactForm = () => {
   const {
@@ -13,9 +9,9 @@ export const ContactForm = () => {
     handleSubmit,
     formState: { errors },
     reset,
-  } = useForm<UseFormInputs>();
+  } = useForm<Schema>({ resolver: zodResolver(schema) });
 
-  const onSubmit = (data: UseFormInputs) => {
+  const onSubmit = (data: Schema) => {
     const serviceId = import.meta.env.VITE_EMAIL_SERVICE_ID;
     const templateId = import.meta.env.VITE_EMAIL_TEMPLATE_ID;
     const publicKey = import.meta.env.VITE_EMAIL_PUBLIC_KEY;
@@ -60,10 +56,11 @@ export const ContactForm = () => {
         />
         {errors.email && <p className="text-danger">email is required</p>}
         <textarea
-          {...register("message")}
+          {...register("message", { required: true })}
           rows={7}
           className="rounded-md text-dark bg-themeWhite"
         />
+        {errors.message && <p className="text-danger">Please input</p>}
         <button
           type="submit"
           className="cursor-pointer text-primary bg-secondary rounded-md py-2 hover:opacity-80"
