@@ -6,9 +6,9 @@ export const About = () => {
         As enthusiastic full stack developer based in Vancouver, Canada, I am
         passionate about developing user-centered application. currently
         focusing on
-        <span className="text-danger"> Hono</span>,{" "}
-        <span className="text-danger">react</span> and{" "}
-        <span className="text-danger">postgreSQL</span>.
+        <span className="text-primary"> Hono</span>,{" "}
+        <span className="text-tertiary">react</span> and{" "}
+        <span className="text-secondary bg-primary">postgreSQL</span>.
         <br />
       </p>
       <p>
