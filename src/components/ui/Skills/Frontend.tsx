@@ -1,6 +1,6 @@
 export const Frontend = () => {
   return (
-    <div className="flex flex-wrap">
+    <div className="flex flex-wrap gap-1">
       <img src="/front-skillset/Astro.svg" />
       <img src="/front-skillset/bootstrap.svg" />
       <img src="/front-skillset/css.svg" />

@@ -1,6 +1,6 @@
 export const Infrastructure = () => {
   return (
-    <div className="flex flex-wrap">
+    <div className="flex flex-wrap gap-1">
       <img src="/infra-skillset/bun.svg" />
       <img src="/infra-skillset/git.svg" />
       <img src="/infra-skillset/Jest.svg" />
