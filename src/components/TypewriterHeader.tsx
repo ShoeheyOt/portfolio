@@ -27,10 +27,13 @@ export function TypewriterHeader() {
     },
   ];
   return (
-    <div className="flex flex-col items-center justify-center h-[40rem] mt-16">
+    <div className="flex flex-col items-center justify-center h-[40rem] mt-8">
       <TypewriterEffect words={words} />
-      <p className="text-neutral-600 dark:text-neutral-200 sm:text-lg md:text-2xl lg:text-4xl mt-10">
-        Enthusiast who love and enjoy coding
+      <p className="text-dark dark:text-themeWhite sm:text-lg md:text-2xl lg:text-4xl mt-10">
+        Enthusiast who love and enjoy{" "}
+        <span className="text-secondary underline decoration-secondary">
+          Coding
+        </span>
       </p>
     </div>
   );
