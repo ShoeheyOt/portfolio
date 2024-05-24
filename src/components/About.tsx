@@ -1,7 +1,7 @@
 export const About = () => {
   return (
     <div id="about" className="w-1/2 mx-4">
-      <p className="mt-8 mb-4">
+      <p className="mt-20 mb-4">
         Thank you for finding me! <br />
         As enthusiastic full stack developer based in Vancouver, Canada, I am
         passionate about developing user-centered application. currently
