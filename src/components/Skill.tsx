@@ -1,7 +1,14 @@
+import { Backend } from "./ui/Skills/Backend";
+import { Frontend } from "./ui/Skills/Frontend";
+import { Infrastructure } from "./ui/Skills/Infrastructure";
+
 export const Skill = () => {
   return (
-    <div className="border border-white w-1/2">
-      <div>this is skill icon part</div>
+    <div className="w-1/2 flex flex-col gap-1 mt-20">
+      <p>Tech Stack</p>
+      <Frontend />
+      <Backend />
+      <Infrastructure />
     </div>
   );
 };
