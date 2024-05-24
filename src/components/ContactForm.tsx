@@ -63,7 +63,7 @@ export const ContactForm = () => {
         {errors.message && <p className="text-danger">Please input</p>}
         <button
           type="submit"
-          className="cursor-pointer text-primary bg-secondary rounded-md py-2 hover:opacity-80"
+          className="cursor-pointer text-primary bg-secondary rounded-md py-2 hover:opacity-80 text-2xl"
         >
           Send
         </button>
