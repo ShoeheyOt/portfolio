@@ -1,5 +1,5 @@
 import { About } from "./About";
-import { Project } from "./Project";
+import { ProjectContainer } from "./ProjectContainer";
 import { Skill } from "./Skill";
 
 export const Main = () => {
@@ -10,7 +10,7 @@ export const Main = () => {
         <Skill />
       </div>
       <div className="h-1/2 border border-white">
-        <Project />
+        <ProjectContainer />
       </div>
     </div>
   );

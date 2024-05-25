@@ -15,26 +15,28 @@ export const ContactForm = () => {
     const serviceId = import.meta.env.VITE_EMAIL_SERVICE_ID;
     const templateId = import.meta.env.VITE_EMAIL_TEMPLATE_ID;
     const publicKey = import.meta.env.VITE_EMAIL_PUBLIC_KEY;
+
     const { sender, email, message } = data;
-    emailjs
-      .send(
-        serviceId,
-        templateId,
-        {
-          sender,
-          email,
-          message,
-        },
-        { publicKey }
-      )
-      .then(
-        () => {
-          console.log("success");
-        },
-        (error) => {
-          console.log("something wrong", error.message);
-        }
-      );
+    console.log(sender, email, message);
+    // emailjs
+    //   .send(
+    //     serviceId,
+    //     templateId,
+    //     {
+    //       sender,
+    //       email,
+    //       message,
+    //     },
+    //     { publicKey }
+    //   )
+    //   .then(
+    //     () => {
+    //       console.log("success");
+    //     },
+    //     (error) => {
+    //       console.log("something wrong", error.message);
+    //     }
+    //   );
     reset();
   };
 
