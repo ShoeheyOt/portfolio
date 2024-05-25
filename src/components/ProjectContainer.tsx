@@ -5,7 +5,7 @@ export const ProjectContainer = () => {
   return (
     <div className="flex justify-between w-full h-full">
       {projectData.map((project) => (
-        <ProjectCard project={project} />
+        <ProjectCard key={project.dataId} project={project} />
       ))}
     </div>
   );
