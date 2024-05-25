@@ -9,7 +9,8 @@ export const Main = () => {
         <About />
         <Skill />
       </div>
-      <div className="h-1/2 border border-white">
+      <div className="h-1/2">
+        <p>My Projects</p>
         <ProjectContainer />
       </div>
     </div>

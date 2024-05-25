@@ -5,7 +5,7 @@ export const Contact = () => {
   return (
     <div
       id="contact"
-      className="h-[calc(100vh-8rem)] w-[calc(100vw-14rem)] flex flex-col items-center gap-12"
+      className="h-[calc(100vh-8rem)] w-[calc(100vw-14rem)] flex flex-col items-center gap-12 mt-20"
     >
       <h2 className="text-3xl">Contact Form</h2>
       <p className="text-xl mb-12">
