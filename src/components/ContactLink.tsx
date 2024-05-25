@@ -1,6 +1,6 @@
 export const ContactLink = () => {
   const githubLink = import.meta.env.VITE_GITHUB_URL;
-  const linkedInLink = import.meta.env.VITE_LINKEDIN_URL;
+  const linkedInLink = import.meta.env.VITE_VERCEL_LINKEDIN_URL;
 
   return (
     <div className="flex gap-20">
