@@ -12,6 +12,7 @@ export const projectData: Project[] = [
       "/front-skillset/react.svg",
       "/front-skillset/typescript.svg",
       "/front-skillset/tailwind-css.svg",
+      "/infra-skillset/bun.svg",
     ],
   },
   {
