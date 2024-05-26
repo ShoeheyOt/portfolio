@@ -1,7 +1,7 @@
 export const About = () => {
   return (
     <div id="about" className="w-1/2 mr-4 flex flex-col gap-2">
-      <p className="text-themeWhite text-3xl mt-20 mb-8">About myself</p>
+      <p className="text-themeWhite text-3xl mt-16 mb-6">About myself</p>
       <p className=" mb-4 text-themeWhite">
         Thank you for finding me! <br />
         As enthusiastic full stack developer based in Vancouver, Canada, I am
