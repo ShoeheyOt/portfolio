@@ -14,7 +14,7 @@ export function TypewriterHeader() {
     },
     {
       text: "Shu ",
-      className: "dark:text-secondary underline decoration-secondary",
+      className: "text-2xl dark:text-secondary underline decoration-secondary",
     },
     {
       text: "full",
@@ -27,7 +27,7 @@ export function TypewriterHeader() {
     },
   ];
   return (
-    <div className="flex flex-col items-center justify-center h-[40rem] mt-8">
+    <div className="flex flex-col items-center justify-center h-[40rem]">
       <TypewriterEffect words={words} />
       <p className="text-dark dark:text-themeWhite sm:text-lg md:text-2xl lg:text-4xl mt-10">
         Enthusiast who love and enjoy{" "}
