@@ -1,16 +1,16 @@
 import { About } from "./About";
-import { Project } from "./Project";
+import { ProjectContainer } from "./ProjectContainer";
 import { Skill } from "./Skill";
 
 export const Main = () => {
   return (
-    <div className="h-screen w-[calc(100vw-20rem)]">
-      <div className="flex justify-between  h-1/2">
+    <div className="h-screen w-[calc(100vw-14rem)]">
+      <div className="w-full flex justify-between h-1/2">
         <About />
         <Skill />
       </div>
-      <div className="h-1/2 border">
-        <Project />
+      <div className="h-1/2">
+        <ProjectContainer />
       </div>
     </div>
   );

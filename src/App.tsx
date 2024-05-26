@@ -6,7 +6,7 @@ import { Main } from "./components/Main";
 
 function App() {
   return (
-    <div className="font-mono font-semibold text-primary text-opacity-90 mx-28">
+    <div className="font-mono font-semibold text-primary text-opacity-90 mx-24">
       <Nav />
       <Header />
       <Main />
