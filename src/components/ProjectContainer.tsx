@@ -3,10 +3,13 @@ import { ProjectCard } from "./ProjectCard";
 
 export const ProjectContainer = () => {
   return (
-    <div className="flex justify-between w-full h-full">
-      {projectData.map((project) => (
-        <ProjectCard key={project.dataId} project={project} />
-      ))}
-    </div>
+    <>
+      <p className="text-3xl text-themeWhite">My Projects</p>
+      <div className="flex justify-between w-full h-full">
+        {projectData.map((project) => (
+          <ProjectCard key={project.dataId} project={project} />
+        ))}
+      </div>
+    </>
   );
 };
