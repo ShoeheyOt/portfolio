@@ -4,12 +4,12 @@ import { Skill } from "./Skill";
 
 export const Main = () => {
   return (
-    <div className="h-screen w-[calc(100vw-14rem)]">
-      <div className="w-full flex justify-between h-1/2">
+    <div className="h-screen 2xl:w-[calc(100vw-14rem)]">
+      <div className="flex flex-col lg:flex-row justify-between lg:h-1/2">
         <About />
         <Skill />
       </div>
-      <div className="h-1/2">
+      <div className="lg:h-1/2">
         <ProjectContainer />
       </div>
     </div>
