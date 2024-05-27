@@ -70,7 +70,7 @@ export const TypewriterEffect = ({
   return (
     <div
       className={cn(
-        "text-lg sm:text-2xl md:text-3xl lg:text-5xl font-bold text-center",
+        "text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-center",
         className
       )}
     >

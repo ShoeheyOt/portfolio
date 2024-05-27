@@ -1,6 +1,6 @@
 export const Nav = () => {
   return (
-    <div className="fixed right-2 flex flex-col gap-6 lg:top-1/2 lg:-translate-y-1/2">
+    <div className="fixed right-2 flex flex-col gap-6 2xl:top-1/2 2xl:-translate-y-1/2">
       <a href="#header" className="cursor-pointer flex justify-end group">
         <div className="hidden group-hover:inline text-lg my-auto mr-1">
           Top
