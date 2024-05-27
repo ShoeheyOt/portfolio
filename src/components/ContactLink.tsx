@@ -1,5 +1,5 @@
 export const ContactLink = () => {
-  const githubLink = import.meta.env.VITE_GITHUB_URL;
+  const githubLink = import.meta.env.VITE_VERCEL_GITHUB_URL;
   const linkedInLink = import.meta.env.VITE_VERCEL_LINKEDIN_URL;
 
   return (
