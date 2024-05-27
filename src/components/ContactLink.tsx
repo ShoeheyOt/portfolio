@@ -10,7 +10,10 @@ export const ContactLink = () => {
         target="_blank"
         className="cursor-pointer hover:opacity-70"
       >
-        <img src="/external/github.svg" className="w-12 h-12" />
+        <img
+          src="/external/github.svg"
+          className="w-8 h-8 md:w-11 md:h-11 lg:w-12 lg:h-12"
+        />
       </a>
       <a
         title="LinkedIn"
@@ -18,10 +21,16 @@ export const ContactLink = () => {
         target="_blank"
         className="cursor-pointer hover:opacity-70"
       >
-        <img src="/external/linkedin.svg" />
+        <img
+          src="/external/linkedin.svg"
+          className="w-8 h-8 md:w-11 md:h-11 lg:w-12 lg:h-12"
+        />
       </a>
       <a title="Resume" className="cursor-pointer hover:opacity-70">
-        <img src="/external/document.svg" />
+        <img
+          src="/external/document.svg"
+          className="w-8 h-8 md:w-11 md:h-11 lg:w-12 lg:h-12"
+        />
       </a>
     </div>
   );
