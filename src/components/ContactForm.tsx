@@ -41,7 +41,7 @@ export const ContactForm = () => {
   };
 
   return (
-    <div className="w-2/4 h-2/5">
+    <div className="w-full px-4 md:w-2/4 h-2/5">
       <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-4">
         <input
           {...register("sender", { required: true })}
@@ -65,7 +65,7 @@ export const ContactForm = () => {
         {errors.message && <p className="text-danger">Please input</p>}
         <button
           type="submit"
-          className="cursor-pointer text-primary bg-secondary rounded-md py-2 hover:opacity-80 text-2xl"
+          className="cursor-pointer text-primary bg-secondary rounded-md py-2 hover:opacity-80 md:text-2xl"
         >
           Send
         </button>
