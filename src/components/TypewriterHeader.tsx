@@ -14,7 +14,7 @@ export function TypewriterHeader() {
     {
       text: "Shu",
       className:
-        "text-2xl md:text-5xl lg:text-6xl 2xl:text-7xl dark:text-secondary underline decoration-secondary",
+        "text-2xl md:text-5xl lg:text-6xl 2xl:text-7xl text-secondary underline decoration-secondary",
     },
     {
       text: "full",
