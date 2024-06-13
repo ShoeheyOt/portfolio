@@ -42,7 +42,7 @@ export const ProjectContainer = () => {
       <div className="projectWrapper">
         <div
           ref={projectCardRef}
-          className="scrollParent w-[400%] h-[90vh] flex flex-row gap-4 2xl:gap-0 justify-between flex-nowrap"
+          className="scrollParent w-[400%] h-[85vh] flex flex-row gap-4 2xl:gap-0 justify-between flex-nowrap last:pr-8"
         >
           {projectData.map((project) => (
             <ProjectCard key={project.dataId} project={project} />
