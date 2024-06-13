@@ -2,15 +2,15 @@ import { Project } from "../assets/data";
 
 export const ProjectCard = ({ project }: { project: Project }) => {
   return (
-    <div className="card w-full h-svh relative group flex flex-col gap-12 py-2">
-      <div className="w-full flex justify-center group-hover:border-2 group-hover:border-secondary group-hover:rounded-md">
+    <div className="card w-full relative group flex flex-col lg:flex-row lg:items-center gap-16 mx-8 pl-6 lg:bg-themeWhite lg:rounded-xl">
+      <div className="w-full flex justify-center lg:items-center group-hover:border-2 group-hover:border-secondary group-hover:rounded-md">
         <img
           src={project.img}
-          className="group-hover:opacity-10 block transition ease-linear w-1/2"
+          className="group-hover:opacity-10 block transition ease-linear w-1/2 md:w-1/3 md:pt-8 lg:w-auto lg:h-3/4"
           alt={project.name}
         />
       </div>
-      <div>
+      <div className="mx-8 flex lg:items-center lg:justify-center lg:bg-dark lg:rounded-xl lg:h-1/2">
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil
           voluptatibus eaque, possimus ducimus vitae laborum vero,

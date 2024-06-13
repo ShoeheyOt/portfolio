@@ -23,9 +23,10 @@ export const ProjectContainer = () => {
         ease: "none",
         scrollTrigger: {
           trigger: wrapper,
-          start: "top 10%",
+          start: "top 5%",
           pin: true,
           scrub: 1,
+          snap: 1 / (cards.length - 1),
           end: () => `+=${getScrollAmount() * -1}`,
           invalidateOnRefresh: true,
         },
@@ -34,20 +35,20 @@ export const ProjectContainer = () => {
     { scope: projectCardRef }
   );
   return (
-    <>
+    <div className="2xl:mt-28">
       <p className="text-center text-3xl text-themeWhite mt-16 2xl:-mt-3 mb-8 mx-4">
         My Projects
       </p>
       <div className="projectWrapper">
         <div
           ref={projectCardRef}
-          className="scrollParent w-[400%] h-svh px-10 flex flex-row gap-4 2xl:gap-0 justify-between flex-nowrap 2xl:h-full"
+          className="scrollParent w-[400%] h-[90vh] flex flex-row gap-4 2xl:gap-0 justify-between flex-nowrap"
         >
           {projectData.map((project) => (
             <ProjectCard key={project.dataId} project={project} />
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 };
