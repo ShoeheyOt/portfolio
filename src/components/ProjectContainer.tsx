@@ -13,9 +13,7 @@ export const ProjectContainer = () => {
     () => {
       const wrapper = document.querySelector(".projectWrapper");
       const cards = gsap.utils.toArray(".card");
-      const cardsCurrent = projectCardRef.current;
-      const cardsWidth = projectCardRef?.current!.offsetWidth;
-      const amountToScroll = cardsWidth - window.innerWidth;
+
       const getScrollAmount = () => {
         const cardsScrollWidth = projectCardRef?.current!.scrollWidth;
         return -(cardsScrollWidth - window.innerWidth);
