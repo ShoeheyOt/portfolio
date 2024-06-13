@@ -9,7 +9,7 @@ export const Main = () => {
         <About />
         <Skill />
       </div>
-      <div className="lg:h-1/2">
+      <div className="">
         <ProjectContainer />
       </div>
     </div>
