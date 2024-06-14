@@ -15,6 +15,8 @@ export default {
         danger: "#FE654F",
         themeWhite: "#C4C4C1",
         dark: "#252325",
+        forest2bg: "#273F30",
+        forest3bg: "#7DA889",
       },
     },
   },

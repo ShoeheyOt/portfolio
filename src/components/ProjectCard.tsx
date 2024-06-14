@@ -10,22 +10,28 @@ export const ProjectCard = ({ project }: { project: Project }) => {
           alt={project.name}
         />
       </div>
-      <div className="text-dark mx-8 flex lg:items-center lg:justify-center lg:h-1/2">
-        <h2>{project.name}</h2>
-      </div>
+      <section>
+        <div className="text-dark mx-8 flex lg:items-center lg:justify-center lg:h-1/2">
+          <h2>{project.name}</h2>
+        </div>
+        <div>
+          <ul>
+            {project.stack.map((skill, index) => (
+              <li key={index}>
+                <img
+                  src={skill}
+                  className="w-6 h-6 md:w-11 md:h-11 lg:w-auto lg:h-auto"
+                />
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
       {/* <div className="absolute h-full w-full transition ease-linear top-4 left-2 md:top-12 md:left-4 lg:top-16 lg:left-6 xl:top-20 opacity-0 group-hover:opacity-90">
         <div className="text-lg md:text-xl lg:text-2xl h-1/4 text-themeWhite">
           {project.name}
         </div>
         <ul className="flex gap-2 flex-wrap">
-          {project.stack.map((skill, index) => (
-            <li key={index}>
-              <img
-                src={skill}
-                className="w-6 h-6 md:w-11 md:h-11 lg:w-auto lg:h-auto"
-              />
-            </li>
-          ))}
         </ul>
       </div> */}
     </div>

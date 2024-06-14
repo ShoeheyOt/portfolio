@@ -14,6 +14,7 @@ export const ProjectContainer = () => {
       const wrapper = document.querySelector(".projectWrapper");
       const cards = gsap.utils.toArray(".card");
 
+      //total width of cards - window innerWidth, calculate how log it needs to scroll
       const getScrollAmount = () => {
         const cardsScrollWidth = projectCardRef?.current!.scrollWidth;
         return -(cardsScrollWidth - window.innerWidth);
