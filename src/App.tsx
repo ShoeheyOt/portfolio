@@ -12,6 +12,8 @@ gsap.registerPlugin(ScrollTrigger);
 
 function App() {
   const wrapperRef = useRef(null);
+  const text1Ref = useRef(null);
+  const text2Ref = useRef(null);
   const campRef = useRef(null);
   const campBGRef = useRef(null);
   const blueBuckRef = useRef(null);
@@ -30,6 +32,8 @@ function App() {
   useGSAP(
     () => {
       const wrapper = wrapperRef.current;
+      const text1 = text1Ref.current;
+      const text2 = text2Ref.current;
       const camp = campRef.current;
       const campBG = campBGRef.current;
       const blueBuck = blueBuckRef.current;
@@ -55,7 +59,7 @@ function App() {
           pin: true,
         },
       });
-
+      tl.to(text1, { opacity: 0, scale: 0.3, y: "+=100" }, 0);
       tl.fromTo(
         cloud1,
         { opacity: 0, scale: 1.8 },
@@ -143,12 +147,27 @@ function App() {
         { x: "-=300", y: "+=180", opacity: 0 },
         { ease: "power1.out", duration: 1, x: "+=200", y: "0", opacity: 1 }
       );
+      tl.fromTo(
+        text2,
+        { opacity: 0, y: "+=200" },
+        { opacity: 1, y: "-=400" },
+        4.5
+      );
+      tl.to(text2, { opacity: 1 }, 5.5);
     },
     { scope: wrapperRef.current! }
   );
   return (
     <div className="font-mono font-semibold text-primary text-opacity-90">
       <section ref={wrapperRef} className="relative h-screen bg-themeWhite">
+        <div ref={text1Ref} className="flex justify-between">
+          <p className="absolute top-24 left-48 text-dark skew-y-12 text-7xl underline underline-offset-8">
+            Having Cozy Time?
+          </p>
+          <p className="absolute top-24 right-48 text-dark -skew-y-12 text-7xl underline underline-offset-8">
+            Need a Coffee?
+          </p>
+        </div>
         <img
           ref={basketBallRef}
           src="hero/basketball.svg"
@@ -223,6 +242,12 @@ function App() {
           src="hero/campTest1.png"
           className="absolute w-full h-full scale-125 object-cover text-dark"
         />
+        <h3
+          ref={text2Ref}
+          className="absolute text-themeWhite text-4xl bottom-72 left-96"
+        >
+          Enjoy and Relax
+        </h3>
       </section>
       <Nav />
       <Header />

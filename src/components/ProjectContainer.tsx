@@ -9,9 +9,10 @@ gsap.registerPlugin(ScrollTrigger);
 
 export const ProjectContainer = () => {
   const projectCardRef = useRef<HTMLDivElement>(null);
+  const projectWrapperRef = useRef(null);
   useGSAP(
     () => {
-      const wrapper = document.querySelector(".projectWrapper");
+      const wrapper = projectWrapperRef.current;
       const cards = gsap.utils.toArray(".card");
 
       //total width of cards - window innerWidth, calculate how log it needs to scroll
@@ -24,7 +25,7 @@ export const ProjectContainer = () => {
         ease: "none",
         scrollTrigger: {
           trigger: wrapper,
-          start: "top 5%",
+          start: "center center",
           pin: true,
           scrub: 1,
           snap: 1 / (cards.length - 1),
@@ -40,7 +41,7 @@ export const ProjectContainer = () => {
       <p className="text-center text-3xl text-themeWhite mt-16 2xl:-mt-3 mb-8 mx-4">
         My Projects
       </p>
-      <div className="projectWrapper">
+      <div ref={projectWrapperRef}>
         <div
           ref={projectCardRef}
           className="scrollParent w-[400%] h-[85vh] flex flex-row gap-4 2xl:gap-0 justify-between flex-nowrap last:pr-8"
