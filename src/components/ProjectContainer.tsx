@@ -8,33 +8,34 @@ gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
 
 export const ProjectContainer = () => {
-  const projectCardRef = useRef<HTMLDivElement>(null);
+  const projectContentsRef = useRef<HTMLDivElement>(null);
   const projectWrapperRef = useRef(null);
   useGSAP(
     () => {
-      const wrapper = projectWrapperRef.current;
+      const projectContents = projectContentsRef.current;
       const cards = gsap.utils.toArray(".card");
 
       //total width of cards - window innerWidth, calculate how log it needs to scroll
       const getScrollAmount = () => {
-        const cardsScrollWidth = projectCardRef?.current!.scrollWidth;
+        const cardsScrollWidth = projectContentsRef?.current!.scrollWidth;
         return -(cardsScrollWidth - window.innerWidth);
       };
       gsap.to(cards, {
         x: getScrollAmount,
         ease: "none",
         scrollTrigger: {
-          trigger: wrapper,
+          trigger: projectContents,
           start: "center center",
           pin: true,
           scrub: 1,
+
           snap: 1 / (cards.length - 1),
           end: () => `+=${getScrollAmount() * -1}`,
           invalidateOnRefresh: true,
         },
       });
     },
-    { scope: projectCardRef }
+    { scope: projectWrapperRef }
   );
   return (
     <div className="2xl:mt-28">
@@ -43,8 +44,8 @@ export const ProjectContainer = () => {
       </p>
       <div ref={projectWrapperRef}>
         <div
-          ref={projectCardRef}
-          className="scrollParent w-[400%] h-[85vh] flex flex-row gap-4 2xl:gap-0 justify-between flex-nowrap last:pr-8"
+          ref={projectContentsRef}
+          className="w-[400%] h-[85vh] flex flex-row gap-4 2xl:gap-0 justify-between flex-nowrap last:pr-8"
         >
           {projectData.map((project) => (
             <ProjectCard key={project.dataId} project={project} />
