@@ -129,10 +129,14 @@ export const Hero = () => {
 
       let mm = gsap.matchMedia();
       mm.add(
-        { isDesktop: "(min-width:800px)", isMobile: "(max-width:799px)" },
+        {
+          isDesktop: "(min-width:800px)",
+          isSmallMobile: "(max-width:425px)",
+          isMobile: "(max-width:799px)",
+        },
         (context) => {
           if (!context.conditions) return;
-          const { isDesktop, isMobile } = context.conditions;
+          const { isDesktop, isMobile, isSmallMobile } = context.conditions;
           tl.to(cloud1, { y: "+=20" }, 3.5);
           tl.to(cloud2, { y: "+=20" }, 3.5);
           tl.to(mount2, { y: isMobile ? "+=40" : "+=80" }, 3.5);
@@ -144,6 +148,7 @@ export const Hero = () => {
           tl.to(blueBuck, { y: "+=10" }, 3.5);
 
           tl.to(camp, { y: isDesktop ? "-=30" : "-=10" }, 3.5);
+          isSmallMobile && tl.to(campBG, { y: "+=10" }, 3.5);
           tl.fromTo(
             basketball,
             { x: "-=300", y: "+=180", opacity: 0 },
