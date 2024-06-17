@@ -171,7 +171,7 @@ function App() {
   );
 
   return (
-    <div className="font-mono font-semibold text-primary text-opacity-90">
+    <div className="font-montserrat font-semibold text-primary text-opacity-90">
       <section ref={heroWrapperRef} className="relative h-[200vh]">
         <div ref={heroContentsRef}>
           <img
@@ -180,10 +180,10 @@ function App() {
           />
           <div
             ref={text1Ref}
-            className="absolute w-screen h-screen flex justify-center gap-48 items-center"
+            className="absolute w-screen mt-6 sm:mt-12 md:mt-36 xl:mt-72 2xl:mt-0 2xl:h-screen flex flex-col lg:flex-row justify-center sm:gap-4 3xl:gap-32 items-center"
           >
-            <img src="hero/logo.svg" className="top-48 left-80 w-96 h-96" />
-            <p className=" text-dark font-montserrat font-thin text-8xl">
+            <img src="hero/logo.svg" className="w-48 h-48 3xl:w-96 3xl:h-96" />
+            <p className=" text-dark font-montserrat font-thin text-xl lg:text-5xl 2xl:text-6xl 3xl:text-8xl">
               User-Centered <br />
               Front End Developer
             </p>
