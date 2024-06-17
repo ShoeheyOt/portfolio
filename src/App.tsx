@@ -178,14 +178,16 @@ function App() {
             src="hero/background.svg"
             className="absolute w-full object-contain 4xl:h-screen 4xl:object-cover"
           />
-          {/* <div ref={text1Ref} className="flex justify-between">
-            <p className="absolute top-24 left-48 text-dark skew-y-12 text-7xl underline underline-offset-8">
-              Having Cozy Time?
+          <div
+            ref={text1Ref}
+            className="absolute w-screen h-screen flex justify-center gap-48 items-center"
+          >
+            <img src="hero/logo.svg" className="top-48 left-80 w-96 h-96" />
+            <p className=" text-dark font-montserrat font-thin text-8xl">
+              User-Centered <br />
+              Front End Developer
             </p>
-            <p className="absolute top-24 right-48 text-dark -skew-y-12 text-7xl underline underline-offset-8">
-              Need a Coffee?
-            </p>
-          </div> */}
+          </div>
           <img
             ref={basketBallRef}
             src="hero/basketball.svg"
@@ -225,10 +227,7 @@ function App() {
             alt="mountain-left"
             className="absolute w-full object-contain"
           />
-          <div
-            // ref={forest3BGref}
-            className="absolute bottom-44 w-full h-1/5 bg-forest3bg"
-          ></div>
+
           <img
             ref={forest3Ref}
             src="hero/forest3.svg"
