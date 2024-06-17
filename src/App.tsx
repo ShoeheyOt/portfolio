@@ -21,7 +21,7 @@ function App() {
   const forest2Ref = useRef<HTMLImageElement | null>(null);
 
   const forest3Ref = useRef<HTMLImageElement | null>(null);
-  const forest3BGref = useRef<HTMLDivElement | null>(null);
+
   const mount1Ref = useRef<HTMLImageElement | null>(null);
   const mount2Ref = useRef<HTMLImageElement | null>(null);
   const mountRightRef = useRef<HTMLImageElement | null>(null);
@@ -40,7 +40,7 @@ function App() {
       const blueBuck = blueBuckRef.current;
       const forest2 = forest2Ref.current;
       const forest3 = forest3Ref.current;
-      const forest3BG = forest3BGref.current;
+
       const mount1 = mount1Ref.current;
       const mount2 = mount2Ref.current;
       const mountR = mountRightRef.current;
@@ -54,12 +54,12 @@ function App() {
         scrollTrigger: {
           trigger: contents,
           start: "top top",
-          markers: true,
+          // markers: true,
           end: () => {
             if (window.innerWidth < 1100) {
-              return "+=50%";
+              return "+=150%";
             } else {
-              return "+=25%";
+              return "+=100%";
             }
           },
           scrub: true,
@@ -112,12 +112,7 @@ function App() {
         { scale: 1, opacity: 1, y: "-=50" },
         1.5
       );
-      tl.fromTo(
-        forest3BG,
-        { scale: 1.5, opacity: 0 },
-        { scale: 1, opacity: 1, y: "-=50" },
-        1.5
-      );
+
       tl.fromTo(
         forest2,
         { scale: 2, opacity: 0 },
@@ -147,13 +142,11 @@ function App() {
           const { isDesktop, isMobile } = context.conditions;
           tl.to(cloud1, { y: "+=20" }, 3.5);
           tl.to(cloud2, { y: "+=20" }, 3.5);
-
           tl.to(mount2, { y: isMobile ? "+=40" : "+=80" }, 3.5);
           tl.to(mount1, { y: isMobile ? "+=30" : "+=60" }, 3.5);
           tl.to(mountR, { y: isMobile ? "+=20" : "+=50" }, 3.5);
           tl.to(mountL, { y: isMobile ? "+=20" : "+=50" }, 3.5);
           tl.to(forest3, { y: "+=40" }, 3.5);
-          tl.to(forest3BG, { y: "+=80", scaleY: 0.5 }, 3.5);
           tl.to(forest2, { y: "+=20" }, 3.5);
           tl.to(blueBuck, { y: "+=10" }, 3.5);
 
@@ -161,7 +154,8 @@ function App() {
           tl.fromTo(
             basketball,
             { x: "-=300", y: "+=180", opacity: 0 },
-            { ease: "power1.out", duration: 1, x: "+=200", y: "0", opacity: 1 }
+            { ease: "power1.out", duration: 1, x: "0", y: "0", opacity: 1 },
+            3.5
           );
           tl.fromTo(
             text2,
@@ -175,13 +169,14 @@ function App() {
     },
     { scope: heroWrapperRef }
   );
+
   return (
     <div className="font-mono font-semibold text-primary text-opacity-90">
-      <section ref={heroWrapperRef} className="relative h-screen">
+      <section ref={heroWrapperRef} className="relative h-[200vh]">
         <div ref={heroContentsRef}>
           <img
             src="hero/background.svg"
-            className="absolute w-full object-contain"
+            className="absolute w-full object-contain 4xl:h-screen 4xl:object-cover"
           />
           {/* <div ref={text1Ref} className="flex justify-between">
             <p className="absolute top-24 left-48 text-dark skew-y-12 text-7xl underline underline-offset-8">
@@ -194,73 +189,73 @@ function App() {
           <img
             ref={basketBallRef}
             src="hero/basketball.svg"
-            className="absolute"
+            className="absolute w-full object-contain 4xl:h-screen 4xl:object-cover"
           />
           <img
             ref={mount2Ref}
             src="hero/mountains3.svg"
-            className="absolute -top-16 w-full object-contain opacity-60"
+            className="absolute -top-16 sm:-top-28 md:-top-48 4xl:-top-12 w-full object-contain opacity-60 4xl:h-screen"
           />
           <img
             ref={cloud1Ref}
             src="hero/cloud1.rev.svg"
-            className="absolute w-full opacity-70"
+            className="absolute w-full opacity-70 4xl:h-screen 4xl:object-cover"
           />
           <img
             ref={cloud2Ref}
             src="hero/cloud2.rev.svg"
-            className="absolute w-screen opacity-100"
+            className="absolute w-screen opacity-100 4xl:h-screen 4xl:object-cover"
           />
 
           <img
             ref={mount1Ref}
             src="hero/mountains1.rev.svg"
             alt="mountain1.rev"
-            className="absolute w-full object-contain"
+            className="absolute w-full top-2 object-contain 4xl:h-screen"
           />
           <img
             ref={mountRightRef}
             src="hero/mountain-Right.rev2.svg"
             alt="mountain-Right"
-            className="absolute -top-8 w-full xl:h-full object-contain"
+            className="absolute -top-8 w-full object-contain 4xl:h-screen 4xl:object-cover"
           />
           <img
             ref={mountLeftRef}
             src="hero/mountain-Left.rev.svg"
             alt="mountain-left"
-            className="absolute w-full xl:h-full object-contain"
+            className="absolute w-full object-contain"
           />
-          {/* <div
-            ref={forest3BGref}
+          <div
+            // ref={forest3BGref}
             className="absolute bottom-44 w-full h-1/5 bg-forest3bg"
-          ></div> */}
+          ></div>
           <img
             ref={forest3Ref}
             src="hero/forest3.svg"
             alt="forest3"
-            className="absolute top-4 left-0 w-full object-contain"
+            className="absolute top-4 left-0 w-full object-contain 4xl:h-screen 4xl:object-cover"
           />
 
           <img
             ref={forest2Ref}
             src="hero/forest2.svg"
             alt="forest2"
-            className="absolute top-10 left-0 w-full object-contain"
+            className="absolute top-10 4xl:top-0 left-0 w-full object-contain 4xl:h-screen 4xl:object-cover"
           />
           <img
             ref={blueBuckRef}
             src="hero/deerAlone2.svg"
-            className="absolute w-full"
+            className="absolute w-full 4xl:h-screen 4xl:object-cover"
           />
           <img
             ref={campBGRef}
             src="hero/campBG.svg"
-            className="absolute w-full"
+            className="absolute w-full 4xl:h-[101vh] 4xl:object-cover"
           />
           <img
             ref={campRef}
             src="hero/campTest1.png"
-            className="absolute w-full object-contain"
+            className="absolute w-screen 4xl:h-screen object-contain 4xl:object-cover"
           />
           <h3
             ref={text2Ref}
@@ -270,6 +265,7 @@ function App() {
           </h3>
         </div>
       </section>
+
       <Nav />
       <Header />
       <Main />

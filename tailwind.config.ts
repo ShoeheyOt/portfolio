@@ -7,6 +7,7 @@ export default {
       screens: {
         "2xl": "1440px",
         "3xl": "1560px",
+        "4xl": "1668px",
       },
       colors: {
         primary: "#78CBC6",
