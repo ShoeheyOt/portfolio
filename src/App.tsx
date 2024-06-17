@@ -180,11 +180,11 @@ function App() {
           />
           <div
             ref={text1Ref}
-            className="absolute w-screen mt-6 sm:mt-12 md:mt-20 lg:mt-52 xl:mt-72 2xl:mt-0 2xl:h-screen flex flex-col lg:flex-row justify-center sm:gap-4 md:gap-8 3xl:gap-32 items-center"
+            className="absolute w-screen mt-12 md:mt-20 lg:mt-52 xl:mt-72 2xl:mt-0 2xl:h-screen flex flex-col lg:flex-row justify-center sm:gap-4 md:gap-8 3xl:gap-32 items-center"
           >
             <img
               src="hero/logo.svg"
-              className="w-48 h-48 3xl:w-72 3xl:h-72 4xl:w-96 4xl:h-96"
+              className="w-32 h-32 sm:w-48 sm:h-48 md:w-72 md:h-72 4xl:w-96 4xl:h-96"
             />
             <p className=" text-dark font-montserrat font-thin text-xl md:text-3xl lg:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl">
               User-Centered <br />
