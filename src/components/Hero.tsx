@@ -2,6 +2,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import { useRef } from "react";
+
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
 
@@ -9,14 +10,12 @@ export const Hero = () => {
   const heroWrapperRef = useRef<HTMLElement | null>(null);
   const heroContentsRef = useRef<HTMLDivElement | null>(null);
   const text1Ref = useRef<HTMLDivElement | null>(null);
-  const text2Ref = useRef<HTMLDivElement | null>(null);
+
   const campRef = useRef<HTMLImageElement | null>(null);
   const campBGRef = useRef<HTMLImageElement | null>(null);
   const blueBuckRef = useRef<HTMLImageElement | null>(null);
   const forest2Ref = useRef<HTMLImageElement | null>(null);
-
   const forest3Ref = useRef<HTMLImageElement | null>(null);
-
   const mount1Ref = useRef<HTMLImageElement | null>(null);
   const mount2Ref = useRef<HTMLImageElement | null>(null);
   const mountRightRef = useRef<HTMLImageElement | null>(null);
@@ -29,13 +28,12 @@ export const Hero = () => {
     () => {
       const contents = heroContentsRef.current;
       const text1 = text1Ref.current;
-      const text2 = text2Ref.current;
+
       const camp = campRef.current;
       const campBG = campBGRef.current;
       const blueBuck = blueBuckRef.current;
       const forest2 = forest2Ref.current;
       const forest3 = forest3Ref.current;
-
       const mount1 = mount1Ref.current;
       const mount2 = mount2Ref.current;
       const mountR = mountRightRef.current;
@@ -152,13 +150,6 @@ export const Hero = () => {
             { ease: "power1.out", duration: 1, x: "0", y: "0", opacity: 1 },
             3.5
           );
-          tl.fromTo(
-            text2,
-            { opacity: 0, y: "+=200" },
-            { opacity: 1, y: "-=400" },
-            4.5
-          );
-          tl.to(text2, { opacity: 1 }, 5.5);
         }
       );
     },
@@ -178,9 +169,10 @@ export const Hero = () => {
         >
           <img
             src="hero/logo.svg"
+            alt="logo"
             className="w-32 h-32 sm:w-48 sm:h-48 md:w-72 md:h-72 4xl:w-96 4xl:h-96"
           />
-          <p className=" text-dark font-montserrat font-thin text-xl md:text-3xl lg:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl">
+          <p className=" text-dark font-montserrat font-extralight xl:font-thin text-xl md:text-3xl lg:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl">
             User-Centered <br />
             Front End Developer
           </p>
@@ -188,40 +180,44 @@ export const Hero = () => {
         <img
           ref={basketBallRef}
           src="hero/basketball.svg"
+          alt="basket-ball"
           className="absolute w-full object-contain 4xl:h-screen 4xl:object-cover"
         />
         <img
           ref={mount2Ref}
           src="hero/mountains3.svg"
+          alt="mountains3"
           className="absolute -top-16 sm:-top-28 md:-top-48 4xl:-top-12 w-full object-contain opacity-60 4xl:h-screen"
         />
         <img
           ref={cloud1Ref}
-          src="hero/cloud1.rev.svg"
+          src="hero/cloud1.svg"
+          alt="cloud1"
           className="absolute w-full opacity-70 4xl:h-screen 4xl:object-cover"
         />
         <img
           ref={cloud2Ref}
-          src="hero/cloud2.rev.svg"
+          src="hero/cloud2.svg"
+          alt="cloud2"
           className="absolute w-screen opacity-100 4xl:h-screen 4xl:object-cover"
         />
 
         <img
           ref={mount1Ref}
-          src="hero/mountains1.rev.svg"
-          alt="mountain1.rev"
+          src="hero/mountains1.svg"
+          alt="mountain1"
           className="absolute w-full top-2 object-contain 4xl:h-screen"
         />
         <img
           ref={mountRightRef}
-          src="hero/mountain-Right.rev2.svg"
+          src="hero/mountain-Right.svg"
           alt="mountain-Right"
           className="absolute -top-8 w-full object-contain 4xl:h-screen 4xl:object-cover"
         />
         <img
           ref={mountLeftRef}
-          src="hero/mountain-Left.rev.svg"
-          alt="mountain-left"
+          src="hero/mountain-Left.svg"
+          alt="mountain-Left"
           className="absolute w-full object-contain"
         />
 
@@ -240,25 +236,22 @@ export const Hero = () => {
         />
         <img
           ref={blueBuckRef}
-          src="hero/deerAlone2.svg"
+          src="hero/blue-buck.svg"
+          alt="blue-buck"
           className="absolute w-full 4xl:h-screen 4xl:object-cover"
         />
         <img
           ref={campBGRef}
           src="hero/campBG.svg"
+          alt="camp-background"
           className="absolute w-full 4xl:h-[101vh] 4xl:object-cover"
         />
         <img
           ref={campRef}
-          src="hero/campTest1.png"
+          src="hero/camp.png"
+          alt="camp"
           className="absolute w-screen 4xl:h-screen object-contain 4xl:object-cover"
         />
-        <h3
-          ref={text2Ref}
-          className="absolute text-themeWhite text-sm top-48 left-14"
-        >
-          Enjoy and Relax
-        </h3>
       </div>
     </section>
   );
