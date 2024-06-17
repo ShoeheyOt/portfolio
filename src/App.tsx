@@ -16,7 +16,7 @@ function App() {
   const text1Ref = useRef<HTMLDivElement | null>(null);
   const text2Ref = useRef<HTMLDivElement | null>(null);
   const campRef = useRef<HTMLImageElement | null>(null);
-
+  const campBGRef = useRef<HTMLImageElement | null>(null);
   const blueBuckRef = useRef<HTMLImageElement | null>(null);
   const forest2Ref = useRef<HTMLImageElement | null>(null);
 
@@ -32,15 +32,13 @@ function App() {
 
   useGSAP(
     () => {
-      const heroWrapper = heroWrapperRef.current;
       const contents = heroContentsRef.current;
       const text1 = text1Ref.current;
       const text2 = text2Ref.current;
       const camp = campRef.current;
-
+      const campBG = campBGRef.current;
       const blueBuck = blueBuckRef.current;
       const forest2 = forest2Ref.current;
-
       const forest3 = forest3Ref.current;
       const forest3BG = forest3BGref.current;
       const mount1 = mount1Ref.current;
@@ -56,7 +54,14 @@ function App() {
         scrollTrigger: {
           trigger: contents,
           start: "top top",
-          end: "1200 center",
+          markers: true,
+          end: () => {
+            if (window.innerWidth < 1100) {
+              return "+=50%";
+            } else {
+              return "+=25%";
+            }
+          },
           scrub: true,
           pin: true,
         },
@@ -127,6 +132,12 @@ function App() {
       );
 
       tl.fromTo(camp, { opacity: 0, scale: 2 }, { opacity: 1, scale: 1 }, 2.3);
+      tl.fromTo(
+        campBG,
+        { opacity: 0, scale: 2 },
+        { opacity: 1, scale: 1 },
+        2.3
+      );
 
       let mm = gsap.matchMedia();
       mm.add(
@@ -137,16 +148,16 @@ function App() {
           tl.to(cloud1, { y: "+=20" }, 3.5);
           tl.to(cloud2, { y: "+=20" }, 3.5);
 
-          tl.to(mount2, { y: "+=80" }, 3.5);
-          tl.to(mount1, { y: "+=60" }, 3.5);
-          tl.to(mountR, { y: "+=50" }, 3.5);
-          tl.to(mountL, { y: "+=50" }, 3.5);
+          tl.to(mount2, { y: isMobile ? "+=40" : "+=80" }, 3.5);
+          tl.to(mount1, { y: isMobile ? "+=30" : "+=60" }, 3.5);
+          tl.to(mountR, { y: isMobile ? "+=20" : "+=50" }, 3.5);
+          tl.to(mountL, { y: isMobile ? "+=20" : "+=50" }, 3.5);
           tl.to(forest3, { y: "+=40" }, 3.5);
           tl.to(forest3BG, { y: "+=80", scaleY: 0.5 }, 3.5);
           tl.to(forest2, { y: "+=20" }, 3.5);
           tl.to(blueBuck, { y: "+=10" }, 3.5);
 
-          tl.to(camp, { y: isDesktop ? "-=140" : "-=15" }, 3.5);
+          tl.to(camp, { y: isDesktop ? "-=30" : "-=10" }, 3.5);
           tl.fromTo(
             basketball,
             { x: "-=300", y: "+=180", opacity: 0 },
@@ -227,14 +238,14 @@ function App() {
             ref={forest3Ref}
             src="hero/forest3.svg"
             alt="forest3"
-            className="absolute top-4 left-0 w-full xl:h-full object-contain"
+            className="absolute top-4 left-0 w-full object-contain"
           />
 
           <img
             ref={forest2Ref}
             src="hero/forest2.svg"
             alt="forest2"
-            className="absolute top-10 left-0 w-full xl:h-full object-contain xl:object-cover"
+            className="absolute top-10 left-0 w-full object-contain"
           />
           <img
             ref={blueBuckRef}
@@ -242,9 +253,14 @@ function App() {
             className="absolute w-full"
           />
           <img
+            ref={campBGRef}
+            src="hero/campBG.svg"
+            className="absolute w-full"
+          />
+          <img
             ref={campRef}
             src="hero/campTest1.png"
-            className="absolute w-full xl:h-full object-contain xl:scale-125 xl:object-cover"
+            className="absolute w-full object-contain"
           />
           <h3
             ref={text2Ref}
