@@ -10,12 +10,13 @@ export const ProjectCard = ({ project }: { project: Project }) => {
           alt={project.name}
         />
       </div>
-      <section>
-        <div className="text-dark mx-8 flex lg:items-center lg:justify-center lg:h-1/2">
-          <h2>{project.name}</h2>
+      <section className="flex flex-col gap-24 mr-12">
+        <div className="text-dark flex flex-col gap-24 lg:h-1/2">
+          <h2 className="font-semibold text-6xl">{project.name}</h2>
+          <p className="">{project.fullDesc}</p>
         </div>
         <div>
-          <ul>
+          <ul className="flex gap-2">
             {project.stack.map((skill, index) => (
               <li key={index}>
                 <img
@@ -27,13 +28,6 @@ export const ProjectCard = ({ project }: { project: Project }) => {
           </ul>
         </div>
       </section>
-      {/* <div className="absolute h-full w-full transition ease-linear top-4 left-2 md:top-12 md:left-4 lg:top-16 lg:left-6 xl:top-20 opacity-0 group-hover:opacity-90">
-        <div className="text-lg md:text-xl lg:text-2xl h-1/4 text-themeWhite">
-          {project.name}
-        </div>
-        <ul className="flex gap-2 flex-wrap">
-        </ul>
-      </div> */}
     </div>
   );
 };

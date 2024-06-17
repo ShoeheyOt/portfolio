@@ -14,14 +14,14 @@ export function TypewriterHeader() {
     {
       text: "Shu",
       className:
-        "text-2xl md:text-5xl lg:text-6xl 2xl:text-7xl text-secondary underline decoration-secondary",
+        "text-2xl md:text-5xl lg:text-6xl 2xl:text-7xl text-forest3bg underline decoration-forest3bg",
     },
     {
-      text: "full",
+      text: "Front",
       className: "text-themeWhite",
     },
     {
-      text: "stack",
+      text: "End",
       className: "text-themeWhite",
     },
     {
@@ -34,7 +34,7 @@ export function TypewriterHeader() {
       <TypewriterEffect words={words} />
       <p className="text-themeWhite md:text-2xl xl:text-3xl mt-10">
         Enthusiast who love and enjoy{" "}
-        <span className="text-secondary underline decoration-secondary">
+        <span className="text-forest3bg underline decoration-forest3bg">
           Coding
         </span>
       </p>
