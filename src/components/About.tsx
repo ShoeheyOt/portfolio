@@ -8,9 +8,10 @@ export const About = () => {
         Thank you for finding me! <br />
         As enthusiastic full stack developer based in Vancouver, I am passionate
         about developing user-centered application. I am currently focusing on{" "}
-        <span className="text-secondary"> Hono</span>,{" "}
-        <span className="text-secondary">react</span> and{" "}
-        <span className="text-secondary">postgreSQL</span>.
+        <span className="text-forest3bg underline"> Hono</span>,{" "}
+        <span className="text-forest3bg underline">react</span> and{" "}
+        <span className="text-forest3bg underline">postgreSQL</span>
+        .
         <br />
       </p>
       <p className="px-4 md:px-20 lg:px-4  text-themeWhite">
