@@ -11,7 +11,7 @@ export const ProjectCard = ({ project }: { project: Project }) => {
         />
       </div>
       <div className="flex flex-col gap-12 px-10 lg:px-0 mt-8 lg:w-[150%]">
-        <div className="text-dark flex flex-col gap-12 md:gap-6">
+        <div className="text-dark flex flex-col gap-2 sm:gap-12 md:gap-6">
           <h2 className="font-medium text-2xl xl:text-5xl">{project.name}</h2>
           <p className="font-normal">
             {window.innerWidth < 1024 ? project.shortDesc : project.fullDesc}
