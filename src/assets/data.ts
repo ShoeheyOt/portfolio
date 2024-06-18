@@ -33,7 +33,7 @@ export const projectData: Project[] = [
     shortDesc:
       "This is an application which memorize what to buy for you using communication platform 'Line'",
     fullDesc:
-      "Have you ever experienced forgetting what to buy which you had just remembered until a second ago? Well, I have, many times. So does my partner.. In order to keep them in memo, I created a app which can remember what to buy for us. I utilize communication platform Line(I would say this is one of the most famous communication tool in my country), so I only focused on server side for creating it, in server side code, I call line web API and response to client based on what he/she sends to server. If is it keyword 'Display', it response every items in the database. If it is 'Clear' which means delete all items in the database, basically this action would be taken after shopping is done. Other than these 2 words, adding them to the database.",
+      "Have you ever experienced forgetting what to buy which you had just remembered until a second ago? Well, I have, many times. To avoid that, I created a app which can remember what to buy for us. I utilize communication platform Line(one of the most famous communication tool in my country) as client side, so I only focused on server side for creating it, in server side code, I call line web API and response to client based on what he/she sends to server. If a request is includes keyword 'Display', it response every items in the database. If it is 'Clear' which means delete all items in the database. Other than these 2 words, adding them to the database.",
     repo: "https://github.com/ShoeheyOt/line-bot",
     stack: ["/front-skillset/typescript.svg", "/infra-skillset/supabase.svg"],
   },
