@@ -13,7 +13,7 @@ export const projectData: Project[] = [
   {
     dataId: 1,
     name: "Pomodoro",
-    img: "/projects/pomodoro.png",
+    img: "/projects/pomodoro.svg",
     shortDesc:
       "This is simple time management application which count 25 minutes, only you have to do is to press 'start' button",
     fullDesc:
@@ -29,7 +29,7 @@ export const projectData: Project[] = [
   {
     dataId: 2,
     name: "line-bot",
-    img: "/projects/line-bot.png",
+    img: "/projects/line-bot.svg",
     shortDesc:
       "This is an application which memorize what to buy for you using communication platform 'Line'",
     fullDesc:
@@ -40,7 +40,7 @@ export const projectData: Project[] = [
   {
     dataId: 3,
     name: "TinyUrl",
-    img: "/projects/tinyURL.png",
+    img: "/projects/tinyURL.svg",
     shortDesc: "This is shortening url application",
     fullDesc:
       "This application let you shorten URL, this is useful especially when you post an url to a social media",
@@ -50,7 +50,7 @@ export const projectData: Project[] = [
   {
     dataId: 4,
     name: "Nishiki",
-    img: "/projects/nishiki.png",
+    img: "/projects/nishiki.svg",
     shortDesc:
       "This is a fridge management application which let you remember what your fridge has so that you don't have to buy duplicated food/drinks",
     fullDesc:
