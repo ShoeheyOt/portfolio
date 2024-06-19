@@ -31,7 +31,7 @@ export const projectData: Project[] = [
     name: "line-bot",
     img: "/projects/line-bot.svg",
     shortDesc:
-      "This is an application which memorize what to buy for you using communication platform 'Line'",
+      "This is an backend application which memorize what to buy for you using communication platform 'Line' as client side UI/UX.",
     fullDesc:
       "Have you ever experienced forgetting what to buy which you had just remembered until a second ago? Well, I have, many times. To avoid that, I created a app which can remember what to buy for us. I utilize communication platform Line(one of the most famous communication tool in my country) as client side, so I only focused on server side for creating it, in server side code, I call line web API and response to client based on what he/she sends to server. If a request is includes keyword 'Display', it response every items in the database. If it is 'Clear' which means delete all items in the database. Other than these 2 words, adding them to the database.",
     repo: "https://github.com/ShoeheyOt/line-bot",
@@ -41,7 +41,8 @@ export const projectData: Project[] = [
     dataId: 3,
     name: "TinyUrl",
     img: "/projects/tinyURL.svg",
-    shortDesc: "This is shortening url application",
+    shortDesc:
+      "This is a CRUD application which shorten a url of your favorite, store as a list, also let you edit, delete the url in the list.",
     fullDesc:
       "This application let you shorten URL, this is useful especially when you post an url to a social media",
     repo: "",
@@ -52,7 +53,7 @@ export const projectData: Project[] = [
     name: "Nishiki",
     img: "/projects/nishiki.svg",
     shortDesc:
-      "This is a fridge management application which let you remember what your fridge has so that you don't have to buy duplicated food/drinks",
+      "This is a fridge management application which remembers and share with your partner/group what your fridge/container has",
     fullDesc:
       "Do you ever find yourself unsure about what's in your fridge? Perhaps you've bought groceries you already had or forgot to buy ones you thought were still in the fridge.With Nishiki, you no longer need to worry about this! It manages the inventory of your fridge for both you and your partner.Nishiki not only manages your fridge for you, but it also enables you to share it with your partner, friends, and more. You'll no longer need to ask your partner about the food in your fridge or worry about having duplicate food when you buy groceries for a party.",
     repo: "https://github.com/nishiki-tech",
