@@ -45,7 +45,7 @@ export const ProjectContainer = () => {
       <div ref={projectWrapperRef}>
         <div
           ref={projectContentsRef}
-          className="w-[400%] h-[70vh] sm:h-[85vh] flex flex-row gap-4 2xl:gap-0 justify-between flex-nowrap pr-4"
+          className="w-[400%] h-[70vh] sm:h-[85vh] md:h-[90vh] flex flex-row gap-4 2xl:gap-0 justify-between flex-nowrap pr-4"
         >
           {projectData.map((project) => (
             <ProjectCard key={project.dataId} project={project} />
