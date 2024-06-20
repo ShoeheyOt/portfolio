@@ -69,7 +69,7 @@ export const ContactForm = () => {
         <button
           aria-label="submit button"
           type="submit"
-          className="cursor-pointer text-primary bg-secondary rounded-md py-2 hover:opacity-80 md:text-2xl"
+          className="cursor-pointer text-forest3bg bg-secondary rounded-md py-2 hover:opacity-80 md:text-2xl"
         >
           Send
         </button>
