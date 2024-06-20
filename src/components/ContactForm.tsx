@@ -44,6 +44,7 @@ export const ContactForm = () => {
     <div className="w-full px-4 md:w-3/4 lg:w-2/4 h-2/5">
       <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-4">
         <input
+          aria-placeholder="name"
           {...register("sender", { required: true })}
           type="text"
           placeholder="name"
@@ -51,6 +52,7 @@ export const ContactForm = () => {
         />
         {errors.sender && <p className="text-danger">name is required</p>}
         <input
+          aria-placeholder="email"
           {...register("email", { required: true })}
           type="text"
           placeholder="email"
@@ -58,12 +60,14 @@ export const ContactForm = () => {
         />
         {errors.email && <p className="text-danger">email is required</p>}
         <textarea
+          aria-label="inquiry"
           {...register("message", { required: true })}
           rows={7}
           className="rounded-md text-dark bg-themeWhite"
         />
         {errors.message && <p className="text-danger">Please input</p>}
         <button
+          aria-label="submit button"
           type="submit"
           className="cursor-pointer text-primary bg-secondary rounded-md py-2 hover:opacity-80 md:text-2xl"
         >
