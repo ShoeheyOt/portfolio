@@ -137,6 +137,7 @@ export const Hero = () => {
         (context) => {
           if (!context.conditions) return;
           const { isDesktop, isMobile, isSmallMobile } = context.conditions;
+          isSmallMobile && tl.to(mountR, { x: "-=100" }, 0);
           tl.to(cloud1, { y: "+=20" }, 3.5);
           tl.to(cloud2, { y: "+=20" }, 3.5);
           tl.to(mount2, { y: isMobile ? "+=40" : "+=80" }, 3.5);
@@ -145,6 +146,7 @@ export const Hero = () => {
           tl.to(mountL, { y: isMobile ? "+=20" : "+=50" }, 3.5);
           tl.to(forest3, { y: "+=40" }, 3.5);
           tl.to(forest2, { y: "+=20" }, 3.5);
+          isSmallMobile && tl.to(blueBuck, { x: "-=20" }, 0);
           tl.to(blueBuck, { y: "+=10" }, 3.5);
 
           tl.to(camp, { y: isDesktop ? "-=30" : "-=10" }, 3.5);
