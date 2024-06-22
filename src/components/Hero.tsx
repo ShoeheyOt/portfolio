@@ -47,7 +47,6 @@ export const Hero = () => {
         scrollTrigger: {
           trigger: contents,
           start: "top top",
-          // markers: true,
           end: () => {
             if (window.innerWidth < 1100) {
               return "+=150%";

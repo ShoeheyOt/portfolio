@@ -7,7 +7,7 @@ import { Hero } from "./components/Hero";
 
 function App() {
   return (
-    <div className="font-montserrat font-semibold text-primary text-opacity-90">
+    <div className="font-montserrat font-semibold text-primary text-opacity-90 overflow-x-hidden">
       <Hero />
       <Nav />
       <Header />
