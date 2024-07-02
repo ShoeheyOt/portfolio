@@ -1,12 +1,14 @@
 import { About } from "./About";
+import { LogoDescription } from "./LogoDescription";
 import { ProjectContainer } from "./ProjectContainer";
 import { Skill } from "./Skill";
 
 export const Main = () => {
   return (
     <div>
-      <div className="flex flex-col lg:flex-row justify-between lg:h-1/2 lg:px-12">
+      <div className="lg:text-3xl flex flex-col justify-between items-center w-full border-2">
         <About />
+        <LogoDescription />
         <Skill />
       </div>
       <div>

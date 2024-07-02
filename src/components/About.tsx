@@ -8,16 +8,16 @@ export const About = () => {
         Thank you for finding me! <br />
         As enthusiastic full stack developer based in Vancouver, I am passionate
         about developing user-centered application. I am currently focusing on{" "}
-        <span className="text-forest3bg underline"> Hono</span>,{" "}
-        <span className="text-forest3bg underline">react</span> and{" "}
-        <span className="text-forest3bg underline">postgreSQL</span>
+        <span className="text-primary underline"> Hono</span>,{" "}
+        <span className="text-primary underline">react</span> and{" "}
+        <span className="text-primary underline">postgreSQL</span>
         .
         <br />
       </p>
       <p className="px-4 md:px-20 lg:px-4  text-themeWhite">
         When I am not coding, I enjoy hiking, playing basketball and drinking
-        beer with my friends. also love to explore a brewery, for now, the best
-        is Philips Brewing in Victoria.
+        beer with my friends. I love to explore a brewery, for now, the best is
+        Philips Brewing in Victoria.
       </p>
     </div>
   );
