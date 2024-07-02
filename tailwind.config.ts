@@ -13,7 +13,7 @@ export default {
         "4xl": "1668px",
       },
       colors: {
-        primary: "#78CBC6",
+        primary: "#7DA889",
         secondary: "#873093",
         tertiary: "#4E6564",
         danger: "#FE654F",
