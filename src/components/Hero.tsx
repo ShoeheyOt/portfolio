@@ -149,6 +149,7 @@ export const Hero = () => {
           tl.to(blueBuck, { y: "+=10" }, 3.5);
 
           tl.to(camp, { y: isDesktop ? "-=30" : "-=10" }, 3.5);
+          tl.to(campBG, { y: "+=20" }, 3.5);
           isSmallMobile && tl.to(campBG, { y: "+=10" }, 3.5);
           tl.fromTo(
             basketball,
