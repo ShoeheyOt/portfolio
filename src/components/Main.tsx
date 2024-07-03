@@ -6,7 +6,7 @@ import { Skill } from "./Skill";
 export const Main = () => {
   return (
     <div>
-      <div className="lg:text-3xl flex flex-col justify-between items-center w-full border-2">
+      <div className="text-sm lg:text-3xl flex flex-col justify-between items-center w-full px-4 md:px-16 lg:px-36">
         <About />
         <LogoDescription />
         <Skill />

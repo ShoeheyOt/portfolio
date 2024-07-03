@@ -48,7 +48,7 @@ export const Hero = () => {
           trigger: contents,
           start: "top top",
           end: () => {
-            if (window.innerWidth < 1100) {
+            if (window.innerWidth < 768) {
               return "+=150%";
             } else {
               return "+=100%";
