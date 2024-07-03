@@ -7,11 +7,11 @@ export const LogoDescription = () => {
           src="hero/logo1.svg"
           className="w-16 md:w-20 lg:w-48 2xl:w-60 h-auto col-start-1 row-start-1 lg:row-span-3 justify-self-center lg:justify-self-start self-center"
         />
-        <p className="col-start-2 col-span-2 row-start-1 text-xs self-center md:text-sm lg:text-base xl:text-lg">
+        <p className="col-start-2 col-span-2 row-start-1 text-xs self-center md:text-sm lg:text-base xl:text-lg 3xl:text-2xl">
           This logo is created by me, which represents myself. each shape and
           color of this log has meanings.
         </p>
-        <div className="col-span-3 lg:col-span-2  row-span-2 text-xs md:text-sm lg:text-base xl:text-lg">
+        <div className="col-span-3 lg:col-span-2  row-span-2 text-xs md:text-sm lg:text-base xl:text-lg 3xl:text-2xl">
           <p>
             -Shape <br />
             My last name is Ota (pronounce is similar to ought). which is "大"

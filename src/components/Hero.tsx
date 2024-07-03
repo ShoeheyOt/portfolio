@@ -150,7 +150,7 @@ export const Hero = () => {
 
           tl.to(camp, { y: isDesktop ? "-=30" : "-=10" }, 3.5);
           tl.to(campBG, { y: "+=20" }, 3.5);
-          isSmallMobile && tl.to(campBG, { y: "+=10" }, 3.5);
+          isDesktop && tl.to(campBG, { y: "+=20" }, 3.5);
           tl.fromTo(
             basketball,
             { x: "-=300", y: "+=180", opacity: 0 },
@@ -239,7 +239,7 @@ export const Hero = () => {
           ref={forest2Ref}
           src="hero/forest2.svg"
           alt="forest2"
-          className="absolute top-10 4xl:top-0 left-0 w-full object-contain 4xl:h-screen 4xl:object-cover"
+          className="absolute top-12 4xl:top-0 left-0 w-full object-contain 4xl:h-screen 4xl:object-cover"
         />
         <img
           ref={blueBuckRef}
@@ -251,7 +251,7 @@ export const Hero = () => {
           ref={campBGRef}
           src="hero/campBG.svg"
           alt="camp-background"
-          className="absolute w-full 4xl:h-[101vh] 4xl:object-cover"
+          className="absolute w-full top-3 4xl:h-[101vh] 4xl:object-cover"
         />
         <img
           ref={campRef}

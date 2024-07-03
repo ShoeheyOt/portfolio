@@ -15,7 +15,7 @@ export const ProjectCard = ({ project }: { project: Project }) => {
         </div>
         <div className="h-full w-5/6 md:w-2/3 xl:w-3/5 2xl:w-1/2">
           <div className="mb-4">
-            <p className="text-dark md:text-2xl underline decoration-2 underline-offset-4 rounded-lg decoration-forest2bg mb-2">
+            <p className="text-dark md:text-2xl underline decoration-2 underline-offset-4 rounded-lg decoration-forest2bg mb-2 lg:mb-6">
               Tech Stack
             </p>
             <ul className="flex gap-2">
@@ -27,7 +27,7 @@ export const ProjectCard = ({ project }: { project: Project }) => {
             </ul>
           </div>
           <div className="text-dark">
-            <p className="font-normal text-xs lg:text-base">
+            <p className="font-normal text-xs lg:text-sm xl:text-base">
               {window.innerWidth < 640 ? project.shortDesc : project.fullDesc}
             </p>
           </div>
