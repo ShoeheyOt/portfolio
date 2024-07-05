@@ -11,7 +11,7 @@ export const Contact = () => {
       <p className="text-md lg:text-lg text-center mb-12">
         <span className="font-bold underline">Thank you</span> for visiting my
         website. If you have any question about my project or about me, please
-        feel free to contact me via below form or LinkedIn.
+        feel free to contact me using the form below or via LinkedIn.
       </p>
       <div className="flex flex-col items-center gap-28 lg:gap-24 w-full mb-4 lg:mb-16 3xl:mb-44">
         <ContactForm />

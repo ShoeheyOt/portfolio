@@ -17,6 +17,10 @@ export function TypewriterHeader() {
         "text-2xl md:text-5xl lg:text-6xl 2xl:text-7xl text-forest3bg underline decoration-forest3bg",
     },
     {
+      text: "a",
+      className: "text-themeWhite",
+    },
+    {
       text: "Front",
       className: "text-themeWhite",
     },
@@ -25,7 +29,7 @@ export function TypewriterHeader() {
       className: "text-themeWhite",
     },
     {
-      text: "developer.",
+      text: "Developer.",
       className: "text-themeWhite",
     },
   ];
@@ -33,9 +37,9 @@ export function TypewriterHeader() {
     <div className="flex flex-col items-center justify-center h-[40rem] px-4">
       <TypewriterEffect words={words} />
       <p className="text-themeWhite md:text-2xl xl:text-3xl mt-10">
-        Enthusiast who love and enjoy{" "}
+        Enthusiast who loves and enjoys{" "}
         <span className="text-forest3bg underline decoration-forest3bg">
-          Coding
+          coding
         </span>
       </p>
     </div>

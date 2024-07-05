@@ -1,6 +1,6 @@
 import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
-import { Schema, schema } from "./validation";
+import { Schema, schema } from "../utils/validation";
 import { zodResolver } from "@hookform/resolvers/zod";
 
 export const ContactForm = () => {
