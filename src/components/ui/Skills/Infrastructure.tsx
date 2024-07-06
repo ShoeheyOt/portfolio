@@ -2,7 +2,7 @@ import { data } from ".";
 
 export const Infrastructure = () => {
   const infraData = data.infrastructure;
-  console.log(infraData);
+
   return (
     <div className="flex flex-wrap gap-1">
       {infraData.map((infra, index) => (

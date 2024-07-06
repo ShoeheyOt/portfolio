@@ -18,7 +18,7 @@ export const LogoDescription = () => {
             Chinese characters. The logo layers these two characters.
           </p>
           <br />
-          <p>
+          <div>
             <span className="font-bold">Color</span>: <br />
             <ul className="list-disc list-inside">
               <li>
@@ -31,7 +31,7 @@ export const LogoDescription = () => {
               </li>
               <li>Red: Represents enthusiasm and passion within me</li>
             </ul>
-          </p>
+          </div>
         </div>
       </div>
     </div>
