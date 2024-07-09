@@ -31,7 +31,7 @@ export const ContactLink = () => {
       <a
         aria-label="jump to resume"
         title="Resume"
-        href="resume/resume.pdf"
+        href="resume/resume1.pdf"
         target="blank"
         className="cursor-pointer hover:opacity-70"
       >
