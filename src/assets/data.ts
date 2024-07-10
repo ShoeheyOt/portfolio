@@ -6,6 +6,7 @@ export interface Project {
   fullDesc: string;
   link?: string;
   repo: string;
+  website?: string;
   stack: string[];
 }
 
@@ -57,6 +58,7 @@ export const projectData: Project[] = [
     fullDesc:
       "Do you ever find yourself unsure about what's in your fridge? Perhaps you've bought groceries you already had or forgot to buy ones you thought were still in the fridge. With Nishiki, you no longer need to worry about this! It manages the inventory of your fridge for both you and your partner. Nishiki not only manages your fridge for you, but it also enables you to share it with your partner, friends, and more. You'll no longer need to ask your partner about the food in your fridge or worry about having duplicate food when you buy groceries for a party.",
     repo: "https://github.com/nishiki-tech",
+    website: "https://nishiki.tech/",
     stack: [
       "/front-skillset/nextjs.svg",
       "/front-skillset/typescript.svg",
