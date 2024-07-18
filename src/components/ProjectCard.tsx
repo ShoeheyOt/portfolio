@@ -30,7 +30,7 @@ export const ProjectCard = ({ project }: { project: Project }) => {
               {window.innerWidth < 640 ? shortDesc : fullDesc}
             </p>
           </div>
-          <div className="flex gap-4 mt-4 text-dark">
+          <div className="flex gap-4 mt-4 text-dark text-xs md:text-sm xl:text-base">
             <h4>Link : </h4>
             <a href={repo} target="_blank" className="decoration underline">
               Github

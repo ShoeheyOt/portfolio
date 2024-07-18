@@ -32,9 +32,9 @@ export const projectData: Project[] = [
     name: "line-bot",
     img: "/projects/line-bot.svg",
     shortDesc:
-      "This is an backend application which memorize what to buy for you using communication platform 'Line' as client side UI/UX.",
+      "This is an backend application which memorize what to buy for you using communication platform 'Line' as front-end.",
     fullDesc:
-      "Have you ever experienced forgetting what to buy which you had just remembered until a second ago? Well, I have, many times. To solve that, I created a app which can remember what to buy for us. I utilize a communication platform called Line(one of the most famous communication tool in my country) as client side, so I focused on server side. If a request includes the keyword 'Display', it responds with all items in the database. 'Clear' is an another keyword which deletes all items in the database. Other than these 2 words, adding them to the database.",
+      "Have you ever experienced forgetting what to buy which you had just remembered until a second ago? We have many times,,, to solve, I created a app which can remember what to buy utilizing a communication platform called Line as client side, so I focused on server side. If a request includes the keyword 'Display', it responds with all items in the database. 'Clear' is an another keyword which deletes all items in the database. Other than these 2 words, adding them to the database.",
     repo: "https://github.com/ShoeheyOt/line-bot",
     stack: ["/front-skillset/typescript.svg", "/infra-skillset/supabase.svg"],
   },
@@ -54,9 +54,9 @@ export const projectData: Project[] = [
     name: "Nishiki",
     img: "/projects/nishiki.svg",
     shortDesc:
-      "This is a fridge management application which remembers and share with your partner/group what your fridge/container has.",
+      "This is a fridge management application which remembers and shares with your partner/group what your fridge has.",
     fullDesc:
-      "Do you ever find yourself unsure about what's in your fridge? Perhaps you've bought groceries you already had or forgot to buy ones you thought were still in the fridge. With Nishiki, you no longer need to worry about this! It manages the inventory of your fridge for both you and your partner. Nishiki not only manages your fridge for you, but it also enables you to share it with your partner, friends, and more. You'll no longer need to ask your partner about the food in your fridge or worry about having duplicate food when you buy groceries for a party.",
+      "Do you ever find yourself unsure about what's in your fridge? Perhaps you've bought groceries you already had or forgot to buy ones you thought were still in the fridge. With Nishiki, you no longer need to worry about this! It manages the inventory of your fridge for both you and your partner. Nishiki not only manages your fridge for you, but it also enables you to share it with your partner, friends, and more. ",
     repo: "https://github.com/nishiki-tech",
     website: "https://nishiki.tech/",
     stack: [

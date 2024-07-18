@@ -157,6 +157,7 @@ export const Hero = () => {
             { ease: "power1.out", duration: 1, x: "0", y: "0", opacity: 1 },
             3.5
           );
+          tl.to(basketball, { opacity: 1.1 }, 6.0);
         }
       );
     },
