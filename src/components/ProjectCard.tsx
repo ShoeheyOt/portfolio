@@ -26,7 +26,7 @@ export const ProjectCard = ({ project }: { project: Project }) => {
             </ul>
           </div>
           <div className="text-dark">
-            <p className="font-normal text-xs md:text-sm xl:text-base">
+            <p className="font-normal text-xs md:text-sm xl:text-base leading-loose">
               {window.innerWidth < 640 ? shortDesc : fullDesc}
             </p>
           </div>
