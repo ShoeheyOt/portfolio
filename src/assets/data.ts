@@ -7,6 +7,7 @@ export interface Project {
   link?: string;
   repo: string;
   website?: string;
+  demo?: string;
   stack: string[];
 }
 
@@ -36,6 +37,7 @@ export const projectData: Project[] = [
     fullDesc:
       "Have you ever experienced forgetting what to buy which you had just remembered until a second ago? We have many times,,, to solve, I created a app which can remember what to buy utilizing a communication platform called Line as client side, so I focused on server side. If a request includes the keyword 'Display', it responds with all items in the database. 'Clear' is an another keyword which deletes all items in the database. Other than these 2 words, adding them to the database.",
     repo: "https://github.com/ShoeheyOt/line-bot",
+    demo: "https://youtube.com/shorts/NrnrAvvU2m4",
     stack: ["/front-skillset/typescript.svg", "/infra-skillset/supabase.svg"],
   },
   {
@@ -46,7 +48,7 @@ export const projectData: Project[] = [
       "This is a CRUD application which shorten a url of your favorite, store as a list, also let you edit, delete the url in the list.",
     fullDesc:
       "This application let you shorten URL, which is especially useful posting a URL to social media",
-    repo: "",
+    repo: "https://github.com/ShoeheyOt/tinyLinker",
     stack: ["/back-skillset/express-js.svg", "/infra-skillset/MongoDB.svg"],
   },
   {
