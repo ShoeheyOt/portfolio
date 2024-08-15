@@ -176,7 +176,7 @@ export const Hero = () => {
           className="absolute w-screen mt-12 md:mt-20 lg:mt-52 xl:mt-72 2xl:mt-0 2xl:h-screen flex flex-col lg:flex-row justify-center sm:gap-4 md:gap-8 3xl:gap-32 items-center"
         >
           <img
-            src="hero/logo2.svg"
+            src="hero/logo.svg"
             alt="logo"
             className="w-32 h-32 sm:w-48 sm:h-48 md:w-72 md:h-72 4xl:w-96 4xl:h-96"
           />
