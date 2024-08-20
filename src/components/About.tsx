@@ -6,9 +6,9 @@ export const About = () => {
         Thank you for finding me! <br />
         As an enthusiastic front end developer based in Vancouver, I am
         passionate about developing user-centered application. I am currently
-        focusing on <span className="text-primary underline"> Hono</span>,{" "}
-        <span className="text-primary underline">React</span> and{" "}
-        <span className="text-primary underline">PostgreSQL</span>.
+        focusing on <span className="text-primary underline">Hono</span>,{" "}
+        <span className="text-primary underline">Rust</span> and{" "}
+        <span className="text-primary underline">Vim</span>.
       </p>
 
       <p className="  text-themeWhite text-xs md:text-xl xl:text-2xl">
