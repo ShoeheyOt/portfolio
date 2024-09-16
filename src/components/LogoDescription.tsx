@@ -12,7 +12,7 @@ export const LogoDescription = () => {
         <p className="col-start-2 lg:col-start-1 col-span-2 lg:col-span-3 row-start-1 text-xs self-center md:text-sm  lg:text-2xl xl:text-3xl xl:text-center xl:-mx-4 xl:-mb-8 3xl:text-2xl 4xl:text-4xl">
           I created this logo to represent myself. Each shape and color has meanings.
         </p>
-        <div className="col-span-3 lg:col-span-2 row-span-2 text-xs md:text-sm lg:text-base xl:text-2xl 3xl:text-2xl 4xl:text-3xl xl:-ml-32 4xl:-ml-44">
+        <div className="col-span-3 lg:col-span-2 row-span-2 text-xs md:text-sm lg:text-base xl:text-2xl 3xl:text-2xl 4xl:text-3xl xl:-ml-32 4xl:-ml-36">
           <p>
             <span className="font-bold">Shape</span>: My last name is Ota (pronounce is similar to
             'ought'). written as "大" and "田" in Chinese characters. The logo layers these two
