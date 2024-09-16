@@ -1,7 +1,7 @@
 export const LogoDescription = () => {
   return (
     <div className="text-themeWhite mb-6 lg:mb-12">
-      <h2 className="text-center text-3xl/10 xl:text-5xl/10 mb-2 4xl:mb-0 4xl:mt-10">
+      <h2 className="text-center text-3xl/10 lg:text-4xl/10 xl:text-5xl/10 mb-2 4xl:mb-0 2xl:mt-28">
         Secret of Logo
       </h2>
       <div className="grid grid-cols-3 grid-rows-3">

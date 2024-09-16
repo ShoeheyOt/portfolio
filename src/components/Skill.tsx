@@ -5,7 +5,9 @@ import { Infrastructure } from "./ui/Skills/Infrastructure";
 export const Skill = () => {
   return (
     <div className="flex flex-col gap-2">
-      <p className="text-themeWhite text-3xl text-center mb-2">Tech Stack</p>
+      <p className="text-themeWhite mb-6 lg:mb-12 text-3xl/10 lg:text-4xl/10 xl:text-5xl/10 text-center">
+        Tech Stack
+      </p>
       <Frontend />
       <Backend />
       <Infrastructure />
