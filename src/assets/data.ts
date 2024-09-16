@@ -71,4 +71,16 @@ export const projectData: Project[] = [
     ],
     link: "https://nishiki-tech.github.io/nishiki-documents/project-document/",
   },
+  {
+    dataId: 5,
+    name: "ToDo-CLI",
+    img: "/projects/to-do-cli.svg",
+    shortDesc:
+      "This is a simple to-do from CLI application made with Rust which is easy to use while coding.",
+    fullDesc:
+      "Have you had an experience someone asked you what to do which is not urgent and you were thinking to do later but forgot? Here it is. This is a simple to-do from CLI application made with Rust. I was looking for simple, light, and fast to do app while coding, and decided to create by myself. I know the app made with it is super fast so I chose this language despite having no prior experience with it.",
+    repo: "https://github.com/ShoeheyOt/to-do-cli",
+    stack: ["/back-skillset/rust.svg"],
+    link: "https://dev.to/shoeheyot/to-do-from-cli-with-rust-36l4",
+  },
 ];
