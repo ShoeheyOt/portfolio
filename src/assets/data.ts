@@ -39,6 +39,7 @@ export const projectData: Project[] = [
     repo: "https://github.com/ShoeheyOt/line-bot",
     demo: "https://youtube.com/shorts/NrnrAvvU2m4",
     stack: ["/front-skillset/typescript.svg", "/infra-skillset/supabase.svg"],
+    link: "https://dev.to/shoeheyot/the-shopping-list-1j81",
   },
   {
     dataId: 3,
@@ -68,5 +69,6 @@ export const projectData: Project[] = [
       "/front-skillset/zod.svg",
       "/infra-skillset/Jest.svg",
     ],
+    link: "https://nishiki-tech.github.io/nishiki-documents/project-document/",
   },
 ];
