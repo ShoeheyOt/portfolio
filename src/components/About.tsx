@@ -18,7 +18,7 @@ export const About = () => {
 
       <p className="  text-themeWhite text-xs/normal md:text-2xl/normal xl:text-4xl/normal">
         When I am not coding, I enjoy hiking, playing basketball and drinking beer with my friends.
-        I love exploring breweries, so far, my favorite is Philips Brewing in Victoria.
+        I love exploring breweries, and so far, my favorite is Philips Brewing in Victoria.
       </p>
     </div>
   );
