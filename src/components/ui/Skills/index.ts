@@ -25,15 +25,7 @@ export const data = {
     "postgresql",
     "postman",
     "prisma",
+    "rust",
   ],
-  infrastructure: [
-    "bun",
-    "git",
-    "Jest",
-    "MongoDB",
-    "mongoose",
-    "neon",
-    "supabase",
-    "vite",
-  ],
+  infrastructure: ["bun", "git", "Jest", "MongoDB", "mongoose", "neon", "supabase", "vite"],
 };
