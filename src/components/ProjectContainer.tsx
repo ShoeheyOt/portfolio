@@ -35,11 +35,11 @@ export const ProjectContainer = () => {
         },
       });
     },
-    { scope: projectWrapperRef }
+    { scope: projectWrapperRef },
   );
   return (
     <div className="2xl:mt-28">
-      <p className="text-center text-3xl text-themeWhite mt-16 2xl:-mt-3 mb-8 mx-4">
+      <p className="text-themeWhite text-center text-3xl lg:text-4xl/10 xl:text-5xl/10 mt-16 2xl:-mt-3 mb-8 mx-4">
         My Projects
       </p>
       <div ref={projectWrapperRef}>
