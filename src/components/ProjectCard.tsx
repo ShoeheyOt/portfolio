@@ -37,7 +37,7 @@ export const ProjectCard = ({ project }: { project: Project }) => {
             </a>
             {website && (
               <a href={website} target="_blank" className="decoration underline">
-                Product Website
+                Product
               </a>
             )}
             {demo && (
